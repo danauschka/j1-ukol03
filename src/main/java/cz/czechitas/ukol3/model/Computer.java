@@ -1,17 +1,14 @@
 package cz.czechitas.ukol3.model;
 
-import java.util.Objects;
-
 public class Computer {
     private boolean isOn;
     private Processor cpu;
     private Memory ram;
     private Drive hardDrive;
 
-    public Processor getCpu() {
+        public Processor getCpu() {
         return cpu;
     }
-
 
     public void setCpu(Processor cpu) {
         this.cpu = cpu;
@@ -55,6 +52,16 @@ public class Computer {
     public void turnOff() {
         isOn = false;
         System.out.println("The computer is off.");
+    }
+
+    public void createFile(long fileSize) {
+
+        if ((Drive.usedSpace + fileSize) > Drive.capacity) {
+            System.out.println("Not enough space on the hard drive.");
+            return;
+        }
+
+       Drive.usedSpace + fileSize;
 
     }
 

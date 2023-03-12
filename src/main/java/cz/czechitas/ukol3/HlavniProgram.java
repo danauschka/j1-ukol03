@@ -5,7 +5,6 @@ import cz.czechitas.ukol3.model.Drive;
 import cz.czechitas.ukol3.model.Memory;
 import cz.czechitas.ukol3.model.Processor;
 
-
 /**
  * Spouštěcí třída celého programu
  */
@@ -32,7 +31,6 @@ public class HlavniProgram {
         thisComputer.setRam(thisMemory);
         thisComputer.setHardDrive(thisDrive);
 
-
         System.out.println("Manufacturer: " + thisProcessor.getManufacturer());
         System.out.println("Speed: " + thisProcessor.getSpeed());
         System.out.println("Memory: " + thisMemory.getMemory());
@@ -42,9 +40,8 @@ public class HlavniProgram {
         thisComputer.turnOn();
         thisComputer.turnOff();
 
+        thisComputer.createFile(20971520L);
 
     }
-
-
 
 }
