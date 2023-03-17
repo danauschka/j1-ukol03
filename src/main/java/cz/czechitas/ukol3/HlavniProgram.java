@@ -38,9 +38,26 @@ public class HlavniProgram {
         System.out.println("Used Space: " + thisDrive.getUsedSpace());
 
         thisComputer.turnOn();
+        thisComputer.turnOn();
+        thisComputer.turnOff();
         thisComputer.turnOff();
 
+        System.out.println(thisComputer);
+
         thisComputer.createFile(20971520L);
+        thisComputer.deleteFile(20971520L);
+
+        System.out.println(thisComputer);
+
+        thisComputer.turnOn();
+        thisComputer.createFile(20971520L);
+        thisComputer.deleteFile(20971520L);
+
+        System.out.println(thisComputer);
+
+        thisComputer.createFile(1099511627776L);
+
+        System.out.println(thisComputer);
 
     }
 

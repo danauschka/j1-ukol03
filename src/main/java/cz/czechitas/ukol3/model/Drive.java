@@ -1,8 +1,8 @@
 package cz.czechitas.ukol3.model;
 
 public class Drive {
-    public static long capacity;
-    public static long usedSpace;
+    private long capacity;
+    private long usedSpace;
 
     public long getCapacity() {
         return capacity;
